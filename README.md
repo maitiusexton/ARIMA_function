@@ -3,6 +3,6 @@ This function is designed to automate the process of choosing an ARIMA model wit
 
 Once all models are tested, the resulting AIC score, along with MSE, RMSE, and R^2 score of both the training and testing data are displayed. Additionally, the results of the Augmented Dickey-Fuller test show whether the data is stationary or not. Autocorrelation is checked with ACF and PACF graphs. Lastly, the model forecasts and residuals are plotted out.
 
-The example in the iPython notebook uses GOOG stock prices from 2015 through 2020.
+The example in the iPython notebook uses GOOG stock prices from 2015 through 2020. I chose to iterate over p and q values from 0 to 5 and d values from 0 to 2.
 
 This code produces several warnings due to issues with the use of datetime information in the index of the data, so I've included a chunk of javascript code that allows you to toggle them.
